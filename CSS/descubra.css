@@ -1,0 +1,123 @@
+body{
+    background-image: url("../Images/Descubra/descubra-fundo.png");
+    background-color: white;
+}
+
+#submenu-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    border-bottom: 5px solid white;
+    div{
+        background-color: aqua;
+        width: 15em;
+        height: 20em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    h3{
+        font-size: 2em;
+        text-align: center;
+    }
+    }
+}
+
+.descubra-sections{
+    max-width: 90%;
+    margin: 0 auto;
+    h2{
+        font-size: 28px;
+        max-width: 15em;
+        padding-bottom: 0.5em;
+        border-bottom: 3px solid white;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    figure{
+        max-width: 40%;
+    }
+}
+
+.filmesRelacionados{
+
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5em 0;
+        justify-content: space-between;
+    
+    }
+    img{
+        width: 10em;
+        border-radius: 50%;
+        
+    }
+}
+
+.Two-Column-Layout div{
+    margin: 1em auto 0 auto;
+    width: 30em;
+    height: 20em;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+        font-size: 36px;
+    }
+
+    
+}
+
+.TCL-imagediv{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bastidores{
+    background-image: url("../Images/Descubra/bastidores-imagem.png");}
+.galeria{
+    background-image: url("../Images/Descubra/galeria-imagem.png");}    
+.galeria-section a{
+    margin-top: 2em;
+}
+
+
+.gallery-cell{
+    border-radius: 2em;
+}
+.gallery-cell:hover{
+    /* scale: 1.1; */
+    border: 5px solid white;
+}
+
+.gallery-cell p{
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 8em;
+
+}
+.flickity-page-dots{
+    justify-content: center;
+    bottom: -40px !important;
+}
+
+.flickity-page-dots .dot{
+    background: white !important;
+}
+
+
+
+#meljones{
+    background-image: url("../Images/Descubra/personagens/mel-jones.png");
+    background-size: cover;
+}

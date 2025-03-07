@@ -1,0 +1,162 @@
+.fundo{
+    background-image: url(../Images/MainPage/home-fundo1.png);
+    background-size: auto;
+}
+
+.novo-fundo{
+    background-image: url("../Images/MainPage/main-fundo-2.jpg");
+    background-size: auto;
+}
+.conter_personagens, .conter_personagens div{
+    display: flex;
+    align-items: end;
+}
+#coraline{
+    width: 25vw;
+    margin-top: 3vh;
+    margin-left: 12vw;
+    transition: all 1s;
+}
+
+#coraline:hover{
+    scale: 1.1;
+    
+}
+#wybie {
+    width: 18vw;
+    height: 20vw;
+    background-image: url("../Images/MainPage/wybie.png");
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+#wybie:hover {
+    background-image: url("../Images/MainPage/outrowybie.png");
+}
+#dad {
+    width: 18vw;
+    height: 30vw;
+    background-image: url("../Images/MainPage/dad.png");
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+#dad:hover {
+    background-image: url("../Images/MainPage/outropai.png");
+    background-position: top;
+}
+#mom {
+    width: 23.2vw;
+    height: 80vh;
+    background-image: url("../Images/MainPage/mom.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+
+#mom:hover {
+    background-image: url("../Images/MainPage/beldam.png");
+    background-position: bottom;
+}
+
+
+#fundo-titulos{
+    width: 100%;
+}
+#sinopse{   /* Seção de sinopse*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    background-image: url(../Images/MainPage/fundo\ secao.png);
+    background-size: cover;
+}
+.card1{
+    background-image: linear-gradient(to bottom, #49676A, #27393A);
+
+}
+#gato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+#gato{
+    #gatinho{
+    max-width: 100%;}
+    #logo{
+    width: 20em;}
+}
+#avaliacao{
+    text-align: center;
+    background-image: url(../Images/MainPage/Fundo\ roxo.png);
+    background-size: cover;
+    > div{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    flex-wrap: wrap;}
+    h2{
+        margin-bottom: 1em;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D1B63 ;
+    max-width: 20em;
+    box-sizing: border-box;
+    padding: 2em;
+    border-radius: 35px;
+    gap: 1em;
+    img{
+    width: 150px;}
+    p{
+        font-size: 16px;
+    }
+    ol{
+        gap: 0.3em;        
+    }
+    li img{
+        width: 2em;
+
+    }
+}
+
+
+    
+div#modal {
+    width: 180px;
+    height: 400px;
+    background-color: #8cb0ff;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 32px; /*bottom*/
+    left: 280px; /* right */
+    z-index: 3;
+    font-size: 20px;
+    box-shadow: 6px 11px 30px rgba(0, 0, 0, 0.3);
+}
+
+#fecharmodal {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80%;
+    color: white;
+    padding: 0.5em;
+}
+
+#modal li {
+    padding: 1em;
+}
+
+#modal ul{
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+}
+#modal a:hover {
+    color: #407cff;
+}

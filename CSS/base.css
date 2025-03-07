@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Inknut Antiqua', Times, serif;
+    line-height: 1.25em;
+    font-weight: 300;
+}
+body{
+    background-color: #000;
+    background-position: top center; 
+    background-repeat: no-repeat;
+    cursor: url("../Images/cursor.svg"), auto;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+header{
+    background-color: #00000079;
+    border-radius: 80px;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    margin-top: 1em;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header li:hover{
+    scale: 1.1;
+}
+header li:active{
+    opacity: 0.8;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+ol{
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+header li img{
+    width: 30px;
+}
+a{
+    text-decoration: none;
+    
+    
+}    
+a:hover{
+    scale: 1.1;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+section{
+    padding: 5em 0;
+    
+} 
+main{
+    background-color: black;
+    box-shadow: 1px -2px 100px 40px rgb(0 0 0);
+    
+}
+footer{
+    padding-top: 20em;
+    background-image: url("../Images/MainPage/footer-fundo.png");
+    background-size: cover;
+    gap: 2em;
+}
+footer > div{
+    max-width: 85%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+footer nav, #footer-line1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    gap: 2em;
+}
+footer nav ol{
+    flex-direction: column;
+    gap: 0.5em;
+}
+footer nav li:first-child{
+    font-weight: bold;
+    font-size: 26px;
+}
+footer p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A6BCC5;
+    padding-bottom: 2em;
+}
+
+.Two-Column-Layout{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.TCL-textdiv{
+    width: 30em;
+    height: 20em;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    
+    p{
+        margin: 1em 0;
+    }
+}
+.titulo_da_pagina{
+    box-shadow: inset 0 1px -2px 100px rgb(192, 14, 14);
+    padding-top: 7em;
+    padding-bottom: 11em;
+    h2{    
+        text-align: center;   
+        font-size: 64px;     
+    }
+}
+
+.card1{
+    padding: 3.5em;
+    border-radius: 76px;
+    box-sizing: border-box;
+    width: 26em;
+    max-height: min-content;
+    p{
+        text-align: start;}
+    }
+    
+    .botao{
+        border: 2px solid white;
+        padding: 0.5em 1.5em;
+        font-size: 16px;
+    }
+    
+    .container{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .supercontainer{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    #noiva-cadaver{box-shadow: 0px 0px 30px 30px #4A86BD;}
+    #casa-monstro{box-shadow: 0px 0px 30px 30px #4689AF;}
+    #jack{box-shadow: 0px 0px 30px 30px #B02326;}
+    #frankenweenie{box-shadow: 0px 0px 30px 30px #8A8A8A;}
+    
+    
+    /* -------------CARROSSEL CARDS--------------- */
+
+    
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .flickity-page-dots li{
+        background: white;
+    }
+    
+    .gallery-cell {
+    width: 15em;
+    height: 20em;
+    margin-right: 3em;
+    background: rgb(60, 36, 163);
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}

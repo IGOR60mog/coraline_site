@@ -1,0 +1,12 @@
+body{
+    background-image: url("../Images/Galeria/galeria-fundo.png");
+}
+
+section h2{
+    margin-bottom: 1em;
+}
+
+.flickity-page-dots{
+    visibility: hidden;
+}
+

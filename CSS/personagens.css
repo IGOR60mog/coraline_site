@@ -1,0 +1,85 @@
+body{
+    background-image: url("../Images/Personagens/personagens-fundo.png");
+}
+
+
+.flickity-page-dots{
+    visibility: hidden;
+}
+
+.flickity-viewport{
+    clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
+}
+    
+.flickity-prev-next-button{
+    background: none !important;
+}
+.flickity-page-dots li{
+    background: white;
+}
+
+.gallery-cell{
+    width: 8em;
+    /* margin-right: 1em; */
+    background: none;
+    display: flex;
+    align-items: end;
+    img{
+        
+        max-width: 100%;
+        max-height: 100%;
+        
+
+}}
+
+.flickity-prev-next-button .arrow {
+    fill: white !important;
+  }
+
+.is-selected{
+    background-image: url("../Images/Personagens/selecao.png");
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 1em;
+    width: 10em;
+    img{
+        
+        margin: 0 auto;
+    }
+}
+
+main{
+    background-image: linear-gradient(to bottom, black, #573485, black);
+}
+.personagens{
+    h2{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+}
+
+.selecionado{
+
+
+    
+    h3{
+        margin-bottom: 1em;
+        font-size: 24px;
+    }
+    
+}
+.selecionado div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    border-top: 2px solid white;    
+    padding-block: 4em;    
+}
+.selecionado img{
+    width: 15em;
+}
+.selecionado p{
+    max-width: 60%;
+}

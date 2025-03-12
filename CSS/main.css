@@ -63,6 +63,8 @@
 
 #fundo-titulos{
     width: 100%;
+    position: sticky;
+    z-index: 2;
 }
 #sinopse{   /* Seção de sinopse*/
     text-align: center;
@@ -126,37 +128,14 @@
     }
 }
 
+@media (max-width: 750px) {
 
-    
-div#modal {
-    width: 180px;
-    height: 400px;
-    background-color: #8cb0ff;
-    padding: 0.5em 1em;
-    position: absolute;
-    top: 32px; /*bottom*/
-    left: 280px; /* right */
-    z-index: 3;
-    font-size: 20px;
-    box-shadow: 6px 11px 30px rgba(0, 0, 0, 0.3);
-}
+    #mom, #wybie, #dad {
+        display: none;}
 
-#fecharmodal {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 80%;
-    color: white;
-    padding: 0.5em;
-}
-
-#modal li {
-    padding: 1em;
-}
-
-#modal ul{
-    display: flex;
-    list-style-type: none;
-    align-content: center;
-}
-#modal a:hover {
-    color: #407cff;
+    #coraline{
+        width: 16em;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
 }

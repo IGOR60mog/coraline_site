@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/personagens.css">
+    <link rel="stylesheet" href="CSS/menu-responsivo.css">
+    <link rel="stylesheet" href="CSS/flickity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Galeria</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <h1><a href="index.html"><img src="Images/logo.svg" alt="Logo Coraline"></a></h1>
+
+            <nav>
+                <ol class="nav-list">
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="descubra.html">Descubra</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ol>
+            </nav>
+            
+            <nav>
+                <ol class="nav-list-2">
+                    <li class="botao-fundo"><img src="Images/Moon.svg" alt="Ícone Lua"></li>
+                    <li><img src="Images/Shop.svg" alt="Icone shop"></li>
+                    <li><img src="Images/Profile.svg" alt="Icone perfil"></li>
+                </ol> 
+            </nav>
+                
+
+            <button class="hamburger"></button> 
+
+        </div>
+        
+    </header>
+
+    <section class="titulo_da_pagina">
+        <h2>Personagens</h2>
+    </section>
+
+    <main>
+        <section class="personagens container">
+            <h2>Escolha um personagem!</h2>
+            <!-- Flickity HTML init -->
+            <div class="gallery js-flickity"
+            data-flickity-options='{ "wrapAround": true }'>
+            
+            <div class="gallery-cell"><img src="Images/Personagens/Mom.png" alt=""></div>
+            <div class="gallery-cell"><img src="Images/Personagens/dad.png" alt=""></div> 
+            <div class="gallery-cell"><img src="Images/Personagens/dad.png" alt=""></div> 
+            <div class="gallery-cell"><img src="Images/Personagens/dad.png" alt=""></div> 
+            <div class="gallery-cell"><img src="Images/Personagens/dad.png" alt=""></div> 
+            <div class="gallery-cell"><img src="Images/Personagens/Coraline.png" alt=""></div>
+            <div class="gallery-cell"><img src="Images/Personagens/wybie.png" alt=""></div>
+
+            <!-- <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div> -->
+            </div>
+        </section>
+
+        <section class="selecionado supercontainer">
+                <h3>Descrição</h3>                
+                <div>   
+                    <img src="Images/Personagens/coraline-image.png" alt="">
+
+                    <p >Lorem ipsum dolor sit amet consectetur. Aliquet amet aliquam pharetra pulvinar cras nunc ac venenatis. Faucibus est et egestas quisque nulla cum ut. Arcu ullamcorper in in enim cras scelerisque faucibus porttitor nunc. Aliquam ullamcorper orci convallis a dictum vivamus dolor. Porttitor et pellentesque tempus penatibus fermentum tincidunt et id at. Arcu vitae rhoncus vel id vitae nibh. In in dignissim adipiscing nisi eget eu.</p>
+                </div>
+        </section>                
+
+    </main>
+
+    <footer>
+        <div>
+            <div id="footer-line1">
+                <figure>
+                    <img src="Images/logo.svg" alt="Logo da Coraline">
+                </figure>
+    
+                <ol>
+                    <li><a href=""><img src="Images/MainPage/insta.svg" alt="Instagram"></a></li>
+                    <li><a href=""><img src="Images/MainPage/face.svg" alt="Facebook"></a></li>
+                    <li><a href=""><img src="Images/MainPage/x.svg" alt="X"></a></li>
+                    <li><a href=""><img src="Images/MainPage/yt.svg" alt="YouTube"></a></li>
+                </ol>
+            </div>
+    
+            <nav>
+                <ol>
+                    <li>Páginas</li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="descubra.html">Descubra</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ol>
+                <ol>
+                    <li>Descubra</li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="bastidores.html">Bastidores</a></li>
+                    <li><a href="filmesRelacionados.html">Filmes relacionados</a></li>
+                </ol>
+                <ol>
+                    <li>Laika</li>
+                    <li>Site</li>
+                    <li>Redes Sociais</li>
+                    <li>Contato</li>
+                    <li>Shop</li>
+                </ol>
+                <ol>
+                    <li>Ajuda</li>
+                    <li>Contato</li>
+                    <li>Informações</li>
+                    <li>Instruções</li>
+                    <li>Shop</li>
+                </ol>
+            </nav>
+    
+            <p>Todos os direitos reservados por Laika studios. Desenvolvido por IFRN 2025 </p>
+        </div>
+    </footer>    
+
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+</html>

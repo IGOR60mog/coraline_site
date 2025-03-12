@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/base.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link rel="stylesheet" href="CSS/menu-responsivo.css">
     <link rel="stylesheet" href="CSS/shop.css">
     <link rel="icon" type="image/png" href="Images/icone.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,25 +18,31 @@
 <body>
 
     <header>
-        <h1><a href="index.html"><img src="Images/logo.svg" alt="Logo Coraline"></a></h1>
+        <div class="nav">
+            <h1><a href="index.html"><img src="Images/logo.svg" alt="Logo Coraline"></a></h1>
 
-        <nav>
-        <ol>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="historia.html">História</a></li>
-            <li><a href="descubra.html">Descubra</a></li>
-            <li><a href="shop.html">Shop</a></li>
-        </ol>                
-        </nav>
+            <nav>
+                <ol class="nav-list">
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="descubra.html">Descubra</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ol>
+            </nav>
+            
+            <nav>
+                <ol class="nav-list-2">
+                    <li class="botao-fundo"><img src="Images/Moon.svg" alt="Ícone Lua"></li>
+                    <li><img src="Images/Shop.svg" alt="Icone shop"></li>
+                    <li><img src="Images/Profile.svg" alt="Icone perfil"></li>
+                </ol> 
+            </nav>
+                
 
-        <nav>
-        <ol>
-            <li><a href=""><img src="Images/Moon.svg" alt="Icone Lua"></a></li>
-            <li><a href=""><img src="Images/Shop.svg" alt="Icone shop"></a></li>
-            <li><a href=""><img src="Images/Profile.svg" alt="Icone perfil"></a></li>
+            <button class="hamburger"></button> 
 
-        </ol>                
-        </nav>
+        </div>
+        
     </header>
 
     <section class="titulo_da_pagina">

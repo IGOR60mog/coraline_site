@@ -1,3 +1,73 @@
 body{
     background-image: url("../Images/Historia/historia-fundo.png");
 }
+
+
+.cronologia{
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 1em;
+    align-items: center;
+    background-image: url("../Images/Historia/Linha-do-tempo.png");
+    background-size: 30em;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+    
+    .cronologia div{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        
+
+    }
+    main img{
+         max-width: 20em;}
+
+    main p{
+        display: block;
+        padding: 1em;
+        text-align: center;
+        white-space: pre-wrap;
+        background-image: linear-gradient(to right, #053FFD, black);
+        margin: 1em;
+        word-wrap: break-word;
+        width: 13em;
+
+    }
+
+
+    .parte1{
+        justify-self: start;
+        margin-top: 22em;
+        /* width: 10em; */
+        
+    }
+    
+    
+    .parte2{
+        margin-top: 1em;
+        justify-self: end;
+        flex-direction: row-reverse;
+        
+    }
+    
+    .parte3{
+        margin-top: 1em;
+        justify-self: start;
+    }
+    
+    .parte4{
+        margin-top: 1em;
+        justify-self: end;
+        flex-direction: row-reverse;
+        padding-bottom: 30vh;
+    }
+    
+    
+    

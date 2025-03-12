@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/descubra.css">
     <link rel="stylesheet" href="CSS/base.css">
     <link rel="stylesheet" href="CSS/menu-responsivo.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link rel="stylesheet" href="CSS/flickity.css">
     <link rel="icon" type="image/png" href="Images/icone.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,22 +57,22 @@
 
         <section id="submenu-cards" class="container">
             <a href="galeria.html">
-                <div>
+                <div style="background-image: url('Images/Descubra/Procure1.png');">
                     <h3>Galeria</h3>
                 </div>
             </a>
             <a href="personagens.html">
-                <div>
+                <div style="background-image: url('Images/Descubra/Procure2.png');">
                     <h3>Personagens</h3>
                 </div>
             </a>
             <a href="bastidores.html">
-                <div>
+                <div style="background-image: url('Images/Descubra/Procure3.png');">
                     <h3>Bastidores</h3>
                 </div>
             </a>
             <a href="filmesRelacionados.html">
-                <div>
+                <div style="background-image: url('Images/Descubra/Procure4.png');">
                     <h3>Filmes Relacionados</h3>
                 </div>
             </a>
@@ -98,12 +98,11 @@
                 <div class="gallery js-flickity"
                 data-flickity-options='{ "wrapAround": true }'>
        
-                <div class="gallery-cell" id="coraline"><p>Coraline</p></div>
-                <div class="gallery-cell" id="wybie"><p>Wybie</p></div>
-                <div class="gallery-cell" id="meljones"><p>Mel Jones</p></div>
-                <div class="gallery-cell" id="charlijones"><p>Charli Jones</p></div>
-                <div class="gallery-cell" id="bobinsky"><p>Sr. Bobinsky</p></div>
-                <div class="gallery-cell" id="beldam"><p>A Outra Mãe</p></div>
+                <div class="gallery-cell" id="coraline" onclick="window.location.href='personagens.html'" style="background-image: url('Images/Descubra/personagens/Fundo\ 1\ -\ Galeria.png'); background-size: 100% 100%;"><p>Coraline</p></div>
+                <div class="gallery-cell" id="meljones" onclick="window.location.href='personagens.html'"><p>Mel Jones</p></div>
+                <div class="gallery-cell" id="charlijones" onclick="window.location.href='personagens.html'" style="background-image: url('Images/Descubra/personagens/Pai2.png'); background-size: contain;"><p>Charli Jones</p></div>
+                <div class="gallery-cell" id="bobinsky" onclick="window.location.href='personagens.html'" style="background-image: url('Images/Descubra/personagens/Bobinsky.png');"><p>Sr. Bobinsky</p></div>
+                <div class="gallery-cell" id="beldam" onclick="window.location.href='personagens.html'" style="background-image: url('Images/Descubra/personagens/OutraMae2.png'); background-size: 100% 100%;"><p>A Outra Mãe</p></div>
                 </div>
             </section>
             
@@ -114,7 +113,7 @@
                     <div class="TCL-textdiv">
                         <h3>COMO FOI FEITO?</h3>
                         <p>a técnica consiste em tirar diversas fotos de objetos inanimados (como bonecos de massinha, por exemplo) e coloca-las em sequência, de forma a fazer com que o nosso cérebro crie a ilusão de movimento devido às diferenças de posição dos objetos.</p>
-                        <a href="galeria.html" class="botao">Veja mais</a>
+                        <a href="bastidores.html" class="botao">Veja mais</a>
                     </div>
                 </div>
             </section>
@@ -122,10 +121,10 @@
             <section class="descubra-sections container filmesRelacionados">
                 <h2>Filmes relacionados</h2>
                 <div>
-                    <figure><img id="noiva-cadaver" src="Images/FilmesRelacionados/noiva-cadaver.png" alt="Poster da Noiva cadáver"></figure>
-                    <figure><img id="frankenweenie" src="Images/FilmesRelacionados/frankenweenie.png" alt="Poster de Frankenweenie"></figure>
-                    <figure><img id="jack" src="Images/FilmesRelacionados/jack.png" alt="Poster do Estranho mundo de Jack"></figure>
-                    <figure><img id="casa-monstro" src="Images/FilmesRelacionados/casa-monstro.png" alt="Poster da casa monstro"></figure>
+                    <figure><img id="noiva-cadaver" src="Images/FilmesRelacionados/noiva-cadaver.png" alt="Poster da Noiva cadáver" onclick="window.location.href='filmesRelacionados.html'"></figure>
+                    <figure><img id="frankenweenie" src="Images/FilmesRelacionados/frankenweenie.png" alt="Poster de Frankenweenie" onclick="window.location.href='filmesRelacionados.html'"></figure>
+                    <figure><img id="jack" src="Images/FilmesRelacionados/jack.png" alt="Poster do Estranho mundo de Jack" onclick="window.location.href='filmesRelacionados.html'"></figure>
+                    <figure><img id="casa-monstro" src="Images/FilmesRelacionados/casa-monstro.png" alt="Poster da casa monstro" onclick="window.location.href='filmesRelacionados.html'"></figure>
 
                 </div>
             </section>
@@ -186,7 +185,16 @@
 
 </body>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js">
+<script src="flickity.js">
+</script>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+    const botao = document.querySelector(".botao-fundo");
+    const body = document.querySelector(".fundo")
+    botao.addEventListener("click", () => body.classList.toggle("novo-fundo"));
 </script>
 
 </html>

@@ -9,3 +9,11 @@ section h2{
 .flickity-page-dots{
     visibility: hidden;
 }
+
+.gallery-cell{
+    width: 22em;
+    height: 30em;
+    background-size: cover;
+    background-position: center;
+
+}

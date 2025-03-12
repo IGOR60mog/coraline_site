@@ -1,5 +1,7 @@
 body{
     background-image: url("../Images/FilmesRelacionados/FR-fundo.png");
+    background-position: top 30em;
+    
 }
 
 main{
@@ -7,17 +9,22 @@ main{
 }
 
 .Two-Column-Layout {
-    max-width: 85%;
+    max-width: 70%;
     margin: 10em auto;
     justify-content: space-around;
 
     img{
         width: 20em;
         border-radius: 50%;}
+
+    div{
+        margin-block: 3em;
+        
+    }
     
 }
 
 
 .TCL-textdiv{
-    max-width: 40%;
+    width: 50%;
 }

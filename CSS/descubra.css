@@ -9,8 +9,10 @@ body{
     gap: 2em;
     justify-content: center;
     border-bottom: 5px solid white;
+    transition: all 1s ease;
     div{
-        background-color: aqua;
+        background-size: cover;
+        background-position: center;
         width: 15em;
         height: 20em;
 
@@ -27,12 +29,14 @@ body{
 
 .descubra-sections{
     max-width: 90%;
-    margin: 0 auto;
+    padding: 4em;
     h2{
         font-size: 28px;
-        max-width: 15em;
+        /* max-width: 50%; */
         padding-bottom: 0.5em;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.562);
+        /* text-align: center; */
+        margin: 2em auto;
     }
 
     h3{
@@ -50,7 +54,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         margin: 5em 0;
-        justify-content: space-between;
+        justify-content: space-around;
     
     }
     img{
@@ -93,10 +97,13 @@ body{
 
 .gallery-cell{
     border-radius: 2em;
+    background-position: top !important;
+    /* background-size: 100% !important; */
 }
 .gallery-cell:hover{
     /* scale: 1.1; */
     border: 5px solid white;
+    cursor: pointer;
 }
 
 .gallery-cell p{

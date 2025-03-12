@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Galeria</title>
+    <title>Personagens - Coraline</title>
 </head>
 
 <body>
@@ -132,5 +132,14 @@
     </footer>    
 
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+<script src="flickity.js"></script>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+    const botao = document.querySelector(".botao-fundo");
+    const body = document.querySelector(".fundo")
+    botao.addEventListener("click", () => body.classList.toggle("novo-fundo"));
+</script>
 </html>

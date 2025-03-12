@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="CSS/flickity.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="Images/icone.png">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Galeria</title>
+    <title>Galeria - Coraline</title>
 </head>
 
 <body>
@@ -56,12 +57,9 @@
             <div class="gallery js-flickity"
             data-flickity-options='{ "wrapAround": true }'>
    
-            <div class="gallery-cell" id="coraline"></div>
-            <div class="gallery-cell" id="wybie"></div>
-            <div class="gallery-cell" id="meljones"></div>
-            <div class="gallery-cell" id="charlijones"></div>
-            <div class="gallery-cell" id="bobinsky"></div>
-            <div class="gallery-cell" id="beldam"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fanart1.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fanart2.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fanart3.png');"></div>
             </div>
 
         </section>
@@ -72,12 +70,12 @@
             <div class="gallery js-flickity"
             data-flickity-options='{ "wrapAround": true }'>
     
-            <div class="gallery-cell" id="coraline"></div>
-            <div class="gallery-cell" id="wybie"></div>
-            <div class="gallery-cell" id="meljones"></div>
-            <div class="gallery-cell" id="charlijones"></div>
-            <div class="gallery-cell" id="bobinsky"></div>
-            <div class="gallery-cell" id="beldam"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Cena1.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Cena2.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Cena3.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fundo\ 1\ -\ Descubra.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fundo\ 1\ -\ História.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Fundo\ 1\ -\ Personagens.png');"></div>
             </div>
 
         </section>
@@ -88,12 +86,10 @@
             <div class="gallery js-flickity"
             data-flickity-options='{ "wrapAround": true }'>
     
-            <div class="gallery-cell" id="coraline"></div>
-            <div class="gallery-cell" id="wybie"></div>
-            <div class="gallery-cell" id="meljones"></div>
-            <div class="gallery-cell" id="charlijones"></div>
-            <div class="gallery-cell" id="bobinsky"></div>
-            <div class="gallery-cell" id="beldam"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Bastidores1.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Bastidores2.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Bastidores3.png');"></div>
+            <div class="gallery-cell" style="background-image: url('Images/Galeria/Bastidores4.png');"></div>
             </div>
 
         </section>
@@ -149,5 +145,15 @@
     </footer>    
 
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+<script src="flickity.js"></script>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+    const botao = document.querySelector(".botao-fundo");
+    const body = document.querySelector(".fundo")
+    botao.addEventListener("click", () => body.classList.toggle("novo-fundo"));
+
+</script>
 </html>

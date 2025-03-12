@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/menu-responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="Images/icone.png">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>Filmes relacionados</title>
@@ -131,4 +132,13 @@
     </footer>    
 
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+    const botao = document.querySelector(".botao-fundo");
+    const body = document.querySelector(".fundo")
+    botao.addEventListener("click", () => body.classList.toggle("novo-fundo"));
+</script>
 </html>
